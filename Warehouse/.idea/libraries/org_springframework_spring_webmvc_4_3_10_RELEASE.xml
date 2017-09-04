@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="org.springframework:spring-webmvc:4.3.10.RELEASE" type="repository">
+    <properties maven-id="org.springframework:spring-webmvc:4.3.10.RELEASE" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.10.RELEASE/spring-webmvc-4.3.10.RELEASE.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.10.RELEASE/spring-web-4.3.10.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

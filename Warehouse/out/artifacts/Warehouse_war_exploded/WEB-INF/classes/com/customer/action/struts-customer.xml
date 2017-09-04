@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <package name="customer" namespace="/customer" extends="default">
+        <action name="customerList" class="com.customer.action.getAllCustomerEntity">
+            <result name="success" type="redirect">customerList.jsp</result>
+        </action>
+        <action name="customerCreate" class="com.customer.action.CustomerCreate">
+            <result name="success" type="redirect">customerList.jsp</result>
+            <result name="error" type="redirect">customerList.jsp</result>
+        </action>
+        <action name="customerDelete" class="com.customer.action.CustomerDelete">
+            <result name="success" type="redirect">customerList.jsp</result>
+        </action>
+        <action name="setLevel" class="com.customer.action.setLevel">
+            <result name="success" type="redirect">customerList.jsp</result>
+        </action>
+        <action name="setPhone" class="com.customer.action.setPhone">
+            <result name="success" type="redirect">customerList.jsp</result>
+        </action>
+        <action name="ChkCustomerName" class="com.customer.action.ChkCustomername">
+            <result name="success">ChkCustomerName.jsp</result>
+        </action>
+    </package>
+</struts>

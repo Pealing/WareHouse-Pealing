@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <package name="supplier" namespace="/supplier" extends="default">
+        <action name="supplierList" class="com.supplier.action.getAllSupplier">
+            <result name="success" type="redirect">supplierList.jsp</result>
+        </action>
+        <action name="supplierCreate" class="com.supplier.action.SupplierCreate">
+            <result name="success" type="redirect">supplierList.jsp</result>
+            <result name="error" type="redirect">supplierList.jsp</result>
+        </action>
+        <action name="supplierDelete" class="com.supplier.action.SupplierDelete">
+            <result name="success" type="redirect">supplierList.jsp</result>
+        </action>
+        <action name="supplierSetPhone" class="com.supplier.action.setPhone">
+            <result name="success" type="redirect">supplierList.jsp</result>
+        </action>
+        <action name="supplierSetRemarks" class="com.supplier.action.setRemarks">
+            <result name="success" type="redirect">supplierList.jsp</result>
+        </action>
+        <action name="ChkSupplierName" class="com.supplier.action.ChkSupplierName">
+            <result name="success">ChkSupplierName.jsp</result>
+        </action>
+    </package>
+</struts>

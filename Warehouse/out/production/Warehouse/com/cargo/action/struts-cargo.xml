@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <package name="cargo" namespace="/cargo" extends="default">
+        <action name="Login" class="com.cargo.action.Login">
+            <result name="success" type="redirect">cargoList.jsp</result>
+            <result name="error" type="redirect">/index.jsp</result>
+        </action>
+        <action name="cargoList" class="com.cargo.action.getAllCargoEntity">
+            <result name="success" type="redirect">cargoList.jsp</result>
+        </action>
+        <action name="cargoCreate" class="com.cargo.action.CargoCreate">
+            <result name="success" type="redirect">cargoList.jsp</result>
+            <result name="error" type="redirect">cargoList.jsp</result>
+        </action>
+        <action name="checkCargoname" class="com.cargo.action.ChkCargoname">
+            <result name="success" >ChkCargoName.jsp</result>
+        </action>
+        <action name="setMinstock" class="com.cargo.action.setMinstock">
+            <result name="success">cargoList.jsp</result>
+        </action>
+        <action name="setPrice" class="com.cargo.action.setPrice">
+            <result name="success">cargoList.jsp</result>
+        </action>
+        <action name="CargoDelete" class="com.cargo.action.CargoDelete">
+            <result name="success">cargoList.jsp</result>
+        </action>
+    </package>
+</struts>
